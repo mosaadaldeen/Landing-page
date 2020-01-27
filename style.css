@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Libre Baskerville', serif;
+}
+
+body {
+    background: linear-gradient(to bottom, rgb(33, 33, 87), rgb(36, 30, 30));
+    z-index: -100;
+}
+
+main {
+    background-image: url(https://images.pexels.com/photos/1447254/pexels-photo-1447254.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar .logo strong {
+    color: teal;
+    font-weight: bold;
+    font-size: 1.7em;
+    margin: 5px;
+}
+
+.navbar .logo span {
+    color: white;
+    font-size: 1.5em;
+}
+
+.links .menu {
+    float: right;
+    list-style: none;
+    margin: 20px;
+}
+
+.links .menu li {
+    display: inline-block;
+    margin: 10px 5px;
+}
+
+.links .menu li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    border: 2px solid #fff;
+}
+
+.links .menu li a:hover {
+    background-color: #fff;
+    color: #000;
+    transition: .4s;
+}
+
+.Home h1 {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 4.5em;
+    margin-top: 70px;
+    margin-bottom: 60px;
+    color: rgb(10, 65, 102);
+}
+
+.Home p {
+    text-align: center;
+    font-size: 2em;
+    color: rgba(236, 231, 247, 0.993);
+    margin: 0 50px;
+}
+
+.About {
+    width: 100%;
+}
+
+.About p {
+    color: slateblue;
+    font-size: 2em;
+    font-weight: bolder;
+    text-align: center;
+    margin: 15px;
+}
+
+.About li span {
+    font-weight: bolder;
+    font-size: 1.2em;
+}
+
+.About li {
+    margin-left: 20%;
+    font-size: 1em;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.video {
+    width: 100%;
+}
+
+.video p {
+    margin: 20px;
+    text-align: center;
+    font-size: 2em;
+    color: slateblue;
+}
+
+.video iframe {
+    width: 60%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20%;
+    margin-left: 20%;
+}
+
+.Prices p {
+    text-align: center;
+    font-size: 2em;
+    color: slateblue;
+}
+
+.Prices .containers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.Prices .container {
+    border: 2px solid black;
+    margin: 20px;
+    width: 370px;
+}
+
+.Prices .container p {
+    background-color: gray;
+}
+
+.Prices .container li {
+    text-align: center;
+    list-style: none;
+    font-size: 1.3em;
+    padding: 5px;
+    background-color: white;
+}
+
+.Contact p {
+    text-align: center;
+    font-size: 2em;
+    color: slateblue;
+}
+
+.container-fill {
+    display: flex;
+}
+
+.container-fill label {
+    text-align: center;
+    margin-left: 40px;
+    font-size: 1em;
+    color: slateblue;
+    /* width: 100%; */
+}
+
+.container-fill input {
+    padding: 7px;
+    margin-right: 20px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+.Contact textarea {
+    margin: 20px 5%;
+    width: 40%;
+    border-radius: 5px;
+}
+
+.container-fill {
+    width: 100%;
+    margin-left: 20%;
+    display: inline;
+}
+
+@media(max-width: 816px) {
+    .video iframe {
+        width: 80%;
+        margin: 20px 10%;
+    }
+}
+
+@media(max-width: 500px) {
+    .navbar {
+        display: block;
+    }
+    .Home h1,
+    .Home p {
+        margin: 30px;
+        font-size: 2em;
+    }
+    .About li {
+        margin-left: 30px;
+        font-size: 1em;
+    }
+    .video iframe {
+        width: 100%;
+        margin: 0;
+    }
+}
